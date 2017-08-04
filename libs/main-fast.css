@@ -76,7 +76,7 @@
     padding-top: 2%;  
   }
   #main-body{
-   background: url(/static/img/FastOpen-03.svg);
+   background: url(../img/FastOpen-03.svg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
