@@ -1,23 +1,18 @@
 var app = angular.module("LivSpeech", []);
 app.directive("livspeech", function() {
     return {
+    	
     	restrict:'EA',
         template : ""+
         			"<div class='app'>"+ 
-					"<input type='button'  name='saveForm' id='switcher' value='Start' class='submit' style='width:100px;'></input>"+ 
+					"<input type='image' style='width:105px;height:105px;'' src='img/mic.svg' name='saveForm' id='switcher' value='Start' class='submit'></input>"+ 
 					"<p id='status'> Record</p>"+ 
 					"<p class='Language-text'> Language</p>"+ 
 					"<select class='language' id='language'>"+ 
-					"<option value='HI'> Hindi</option>"+ 
+					
 					"<option value='EN'> English</option>"+ 
-					"<option value='PB'> Punjabi</option>"+ 
-					"<option value='KA'> Kannada</option>"+ 
-					"<option value='BN'> Bengali</option>"+ 
-					"<option value='TE'> Telugu</option>"+ 
-					"<option value='GU'> Gujarati</option>"+ 
-					"<option value='MR'> Marathi</option>"+ 
 					"</select>"+ 
-					"<img src='images/page-1.svg' class='waveImage'>"+ 
+					// "<img src='images/page-1.svg' class='waveImage'>"+ 
 					"</div>",
 		controller: function(){
 

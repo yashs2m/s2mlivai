@@ -1,0 +1,207 @@
+@media only screen and (max-width: 768px) {
+  #mobilespan{
+  /*padding-left: 0%;*/
+
+}
+.tag-content-inner{
+  font-size: 22px!important;
+}
+}
+.registerfree{
+  text-align: center;
+}
+.star-tag h6{
+  font-size: 10px;
+  font-style: italic;
+}
+.registerfreeTag{
+  
+    font-size: 16px;
+    color: grey;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Fira Sans', sans-serif;
+}
+#fontstyle-outer{
+  font-family: 'Fira Sans', sans-serif;
+}
+.fontstyle{
+  font-family: 'Fira Sans', sans-serif;
+}
+.listyle{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #E03085;
+    font-family:  'Fira Sans', sans-serif;
+}
+.listyle1{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #78BA21;
+    font-family:  'Fira Sans', sans-serif;
+}
+.listyle2{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Fira Sans', sans-serif;
+    color: #0099CC;
+}
+.listyle3{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Fira Sans', sans-serif;
+    color: #E7832C;
+}
+.listyle4{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Fira Sans', sans-serif;
+    color: #804A96;
+}
+.listyle5{
+      text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    font-family:  'Fira Sans', sans-serif;
+    color: #000000;
+}
+
+  .img-outer{
+    text-align: center;  
+    padding-top: 2%;  
+  }
+  #main-body{
+   background: url(/static/img/FastOpen-03.svg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .s2m-presrnts h5{
+    font-weight:  300;
+    font-size: 16px;
+    color: #666;
+  }
+  .tag-content{
+    font-size: 28px;
+    margin-bottom: 0px;
+  }
+  .tag-content-inner{
+            color: #cc6633;
+    font-size: 30px;
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+    padding-top: 4%;
+    font-weight: 200;
+    line-height: 1.3;
+  }
+  .questionnaire h3{
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+        color: #666;
+    font-family: 'Crushed', cursive;
+  }
+  .downarrow-questionnaire{
+    text-align: center;
+  }
+  .questionnaire-ans{
+    text-align: center;
+  }
+  #main-container{
+    background: white;  width: 70%;
+  }
+  #widthimg{
+    width: 400px;
+    padding-top: 4%;
+  }
+  #fast-contact-div{
+    padding-top: 2%;
+    padding: 50px;
+    text-align: center;
+  }
+  @media only screen and (max-width: 768px) {
+    .phonecallcontactspan{
+      font-size: 14px!important;
+    }
+    #phone-contact-fast{
+      padding: 5%!important;
+      padding-left: 15%!important;
+  }
+    #fontstyle-outer{
+      padding: 4%;
+    }
+    #fastlogo-img{
+  width: 150px!important;
+   padding-top: 5%!important;
+   padding-bottom: 5%!important; 
+  }
+  #fast-contact-div{
+    padding: 0px;
+    text-align: center;
+  } 
+       #main-container{
+    background: white;  width: 90%;
+  }
+  #widthimg{
+    width: 200px;
+    padding-top: 4%;
+  }
+}
+
+
+a{
+  color: black;
+}
+
+.show_hide1 h3:hover{
+  color: #E03085;
+}
+.show_hide h3:hover{
+  color: #78BA21;
+}
+.show_hide2 h3:hover{
+  color: #0099CC;
+}
+.show_hide3 h3:hover{
+  color: #E67D21;
+}
+.show_hide4 h3:hover{
+  color: #993399;
+}
+.show_hide5 h3:hover{
+  color: #000000;
+}
+.register-btn{
+  
+    font-size: 26px;
+    background: #7F4996;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 300;
+    padding: 12px;
+    text-decoration: none;
+    box-shadow: 0px 0px 10px -1px black;
+    color: white;
+    border-radius: 2%;
+}
+.register-btn:hover{
+  background-color: #E57E22;
+}
+.phonecallcontactspan{
+      color: #666;
+    font-size: 18px;
+    /*font-weight: bold;*/
+    font-family:  'Fira Sans', sans-serif;
+    /*padding-left: 10%;*/
+}
+#fastlogo-img{
+  width: 250px; padding-top: 3%
+}
+#phone-contact-fast{
+      padding: 5%;
+}
