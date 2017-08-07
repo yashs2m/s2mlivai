@@ -13,6 +13,7 @@
   <script type="text/javascript" src='libs/recorder.js'></script>
   <script type="text/javascript" src='libs/decode.js'></script>
   <script type="text/javascript" src="libs/app.js"></script>
+  <script type="text/javascript" src='libs/index.js'></script>
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -157,9 +158,17 @@ mixpanel.init("81ac538d616399f3a93c9e69e34c8ba0");</script> -->
           </div>
           <div ng-app="LivSpeech">
     <div class="">
-
+      <p style="text-align: left; font-size: 18px; font-weight: bold; padding-left: 3%; padding-top: 3%;"> Read the instructions carefully   </p>
+    <p style="text-align: left; font-size: 18px; font-weight: 500; padding-left: 3%; padding-bottom: 3%; padding-top: 1%"> Step 1- Fill up the above details <br> Step 2- Click on button Grab video & start recording and if don't want to hear your own voice, please mute your device. <br> Step 3- Click on recording icon and start speaking <br> Step 4- Click on the icon again after finish your passage <br> Step 5- Click on the submit button below <br> Step 6- Click on the download button to get the audio<br>Step 7- Refesh the page to retake the test</p>
       <p style="text-align: center; font-size: 18px; font-weight: bold;">Passage - 3
     </p>  
+    <div class="text-center">
+      <button onclick="startFunction()">Grab video & start recording</button>
+    <button onclick="download()">Download!</button>
+    <p style="display:none;"><video id="video" autoplay width=320/><p>
+    
+    </div>
+     
       <p style=" padding: 3%; text-align: center; font-size: 18px;">One day, Sana was going home. On the way, she saw a small pup on the road. He looked very scared of the cars zooming by. Sana went up to him. “Hey, little puppy, are you all alone? Do not look scared. I will take you home with me.” When Sana got the pup home, her mother was not pleased. “Who will feed it and take care of it?” she asked. “I will do it, Mom,” said Sana. “I will call him Moti.” Sana and Moti played ‘Hide and Seek’. Moti would find Sana quickly, with ease. He had a sharp good nose and could smell things from a distance. One day, Sana’s mother was unhappy. She had misplaced her gold ring. Moti came and sat near her. He put his paw in her lap and licked her hand. “You know how to make me smile, Moti. Now, if only you could find my ring!” Moti jumped off her lap and started to sniff around the house. He found the ring! It was hidden under an armchair. He took it to Sana’s mother with a delighted look on his face. She was extremely joyous. “I am sorry I did not want to keep you, Moti. I know that it is not just me who takes care of you. You take care of me, too!”
 
     </p>  
@@ -389,7 +398,7 @@ var dbRefs2m = new Firebase("https://s2m-database.firebaseio.com/");
     var grade = document.getElementById("grade").value;
     var coordinatorteachername = document.getElementById("coordinatorteachername").value;
     var sectionname = document.getElementById("sectionname").value;
-
+   // var audiovoice = uploader.blobToFile(details.data.data, "tmp_name.ogg");
     //event.preventDefault();
 
     console.log(newspeech);
@@ -406,8 +415,8 @@ var dbRefs2m = new Firebase("https://s2m-database.firebaseio.com/");
           'schoolname' : schoolname,
           'grade' : grade,
           'sectionname' : sectionname,
-          'coordinatorteachername' : coordinatorteachername
-
+          'coordinatorteachername' : coordinatorteachername,
+          'audiovoice' : audiovoice
         })
 
 

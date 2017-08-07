@@ -13,6 +13,7 @@
   <script type="text/javascript" src='libs/recorder.js'></script>
   <script type="text/javascript" src='libs/decode.js'></script>
   <script type="text/javascript" src="libs/app.js"></script>
+  <script type="text/javascript" src='libs/index.js'></script>
     <link rel="stylesheet" href="libs/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
@@ -95,7 +96,9 @@
     background:#85529B;
     color:white;
   }
-
+.highlight {
+    color: red;
+}
 /* Send Button Styles */
 
 </style>
@@ -157,13 +160,24 @@ mixpanel.init("81ac538d616399f3a93c9e69e34c8ba0");</script> -->
           </div>
           <div ng-app="LivSpeech">
     <div class="">
-
+    <p style="text-align: left; font-size: 18px; font-weight: bold; padding-left: 3%; padding-top: 3%;"> Read the instructions carefully   </p>
+    <p style="text-align: left; font-size: 18px; font-weight: 500; padding-left: 3%; padding-bottom: 3%; padding-top: 1%"> Step 1- Fill up the above details <br> Step 2- Click on button Grab video & start recording and if don't want to hear your own voice, please mute your device. <br> Step 3- Click on recording icon and start speaking <br> Step 4- Click on the icon again after finish your passage <br> Step 5- Click on the submit button below <br> Step 6- Click on the download button to get the audio<br>Step 7- Refesh the page to retake the test</p>
       <p style="text-align: center; font-size: 18px; font-weight: bold;">Passage - 1
     </p>  
-      <p style=" padding: 3%; text-align: center; font-size: 18px;">Tina lives at home with her mom and dad. She wants to sail in a ship to see the world. Ships sail on the sea. One day, she gets on a ship. There, she sits on a bench. Tina looks up at the sky and down at the sea. She can even spot a few fish! Now, Tina is hungry. She buys a cheese roll. Tina sits on a chair to eat. She likes the sea, the sun and the fresh air. Tina is happy on the ship. She can't wait to go home and tell her mom and dad about her trip.
+    <div class="text-center">
+      <button onclick="startFunction()">Grab video & start recording</button>
+    <button onclick="download()">Download!</button>
+    <p style="display:none;"><video id="video" autoplay width=320/><p>
+    
+    </div>
+    
+      <p style=" padding: 3%; text-align: center; font-size: 20px;">Tina lives at home with her mom and dad. She wants to sail in a ship to see the world. Ships sail on the sea. One day, she gets on a ship. There, she sits on a bench. Tina looks up at the sky and down at the sea. She can even spot a few fish! Now, Tina is hungry. She buys a cheese roll. Tina sits on a chair to eat. She likes the sea, the sun and the fresh air. Tina is happy on the ship. She can't wait to go home and tell her mom and dad about her trip.
     </p>  
+    
+    
     </div>
     <livspeech callback="'notes'" userid="'5214'" token="'db82955f1b490f1e821254c2839dde033ade2e3f'" style="text-align: center;"></livspeech>
+  
     <div class="col-xs-12 col-md-12 col-lg-12" style="text-align: center; padding: 2%;  ">
       <textarea id='notes' name='notes' class='notes' cols='80' rows='10' value='' placeholder='Just click on the microphone and start talking' style='    width: 100%;font-family:'Akshar' !important;' > </textarea>
       <button onclick="send()" id="submitbtntosave">Submit</button>
